@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan200
 
 import os
 from configs import Configs
