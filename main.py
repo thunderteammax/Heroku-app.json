@@ -27,10 +27,6 @@ async def start_command(_, m: Message):
         "Hey There, I am Tender Bot and I am Heroku app.json maker bot.If You don't Know to make app.jsom easily make from our bot.\n\n"
         "To start making app.json for your heroku app,\n"
         "Press /make",
-        quote=True,
-        disable_web_page_preview=True,
-    )
-
 buttons = [
     [
         InlineKeyboardButton(
@@ -46,7 +42,9 @@ buttons = [
         ),
     ],
 ]
-
+        quote=True,
+        disable_web_page_preview=True,
+    )
 
 @app.on_message(filters.command("make") & ~filters.edited & filters.private)
 async def f_command(bot: Client, m: Message):
