@@ -31,16 +31,22 @@ async def start_command(_, m: Message):
         disable_web_page_preview=True,
     )
 
-JOIN_BUTTONS = [
-    InlineKeyboardButton(
-        text='🚀 Join Bots Updates Channel 🚀',
-        url='https://t.me/thunderprojectsupdates'
-    ),
-    InlineKeyboardButton(
-        text='🔥 Join our Group🔥',
-        url='https://t.me/thundergotechnologysupport'
-    )    
+buttons = [
+    [
+        InlineKeyboardButton(
+            text="➕ Add GoHelp To Your Group ➕", url="https://t.me/thundergohelpbot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(text="Updates Channel", url="https://t.me/thunderprojectsupdates"),
+        InlineKeyboardButton(text="Support Group", url="https://t.me/thundergotechnologysupport"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="Help & Commands", callback_data="help_back"
+        ),
+    ],
 ]
+
 
 @app.on_message(filters.command("make") & ~filters.edited & filters.private)
 async def f_command(bot: Client, m: Message):
