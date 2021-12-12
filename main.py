@@ -27,21 +27,6 @@ async def start_command(_, m: Message):
         "Hey There, I am Tender Bot and I am Heroku app.json maker bot.If You don't Know to make app.jsom easily make from our bot.\n\n"
         "To start making app.json for your heroku app,\n"
         "Press /make",
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="➕ Add GoHelp To Your Group ➕", url="https://t.me/thundergohelpbot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Updates Channel", url="https://t.me/thunderprojectsupdates"),
-        InlineKeyboardButton(text="Support Group", url="https://t.me/thundergotechnologysupport"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Help & Commands", callback_data="help_back"
-        ),
-    ],
-]
         quote=True,
         disable_web_page_preview=True,
     )
