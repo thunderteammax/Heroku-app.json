@@ -24,7 +24,7 @@ app = Client(
 @app.on_message(filters.command("start") & filters.private & ~filters.edited)
 async def start_command(_, m: Message):
     await m.reply_text(
-        "Hey There, I am Tender Bot and I am Heroku app.json maker bot.If You don't Know to make app.json easily make from our bot.\n\n"
+        "Hey There, I am Tender Bot and I am Heroku app.json maker bot.If You don't Know to make app.json. easily make from our bot.\n\n"
         "To start making app.json for your heroku app,\n"
         "Press /make",
         quote=True,
